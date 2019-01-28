@@ -1,8 +1,9 @@
-<div style="text-align:center">
+
   <h1> My Quotes</h1>
   <p> This quote app will help you to </p>
   <ul>
-    <li *ngFor='let quote of Quotes'>{{quote}}</li>
+    <li *ngFor='let quote of quotes'>{{quote.name}}</li>
   </ul>
+  <p *ngIf='quotes.length > 5'>You have too many goals</p>
  
 <router-outlet></router-outlet>
