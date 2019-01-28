@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import {Quote} from './quote'
 @Component({
-  selector: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   quotes= [
@@ -13,4 +14,5 @@ export class AppComponent {
     new Quote(5, 'See the number of upvotes and downvotes'),
     
 ]
+constructor() { }
 }
