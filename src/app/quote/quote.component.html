@@ -1,8 +1,10 @@
 <h1> My Quotes</h1>
   <p> This quote app will help you to </p>
   <ul>
-    <li *ngFor='let quote of quotes'>{{quote.name}}</li>
-  </ul>
-  <p *ngIf='quotes.length > 5'>You have too many goals</p>
- 
+<div *ngFor='let quote of quotes'>
+  <li>{{quote.name}}</li>
+  <button  (click)='toogleDetails(i)'>Toogle Details</button>
+  <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeGoal($event,i)'></app-quote-details>
+
+</div>
 <router-outlet></router-outlet>
