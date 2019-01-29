@@ -1,6 +1,37 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+#Quotes Web application. Quotes is a web application that gathers inforomation about different quotes from variouse individuals past and present. What was said who said them and who posed the quote plus the time that has passed since the post was made published.
+
+Quotes made past and present. 29/01/2019
+By Simpenzwe Anais
+Description
+Quotes: a web application that gathers quotes from various individuals past and present.
+
+Visitors to the site are encourage to post their favourite quotes by historical and/or present figures. This is then made visible to others who can either upvote or downvote and the quote with the highest number of vote gets highlighted.
+
+Setup/Installation Requirements
+There are no installation requirments needed... with your web browser you can be abe to access the site.
+
+Known Bugs
+There is a small issue that will be fixed in the coming days... an auto-refresh. clearing the fields as soon as the quote is submitted. and highlighting the quote with the highest number of votes.
+
+Technologies Used
+*HTML
+*CSS
+*JAVASCRIPT/TYPESCRIPT
+*ANGULAR CLI
+
+## Support and contact details
+If u have any question u can contact me on:
+
+* Tel:+250783711066
+* Email:anaissimpenzwe@gmail.com
+
+License
+
+MIT Copyright (c) 2019 Simpenzwe Anais
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
 
@@ -12,7 +43,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
