@@ -7,13 +7,18 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes= [
-    new Quote(1,'Create a quote', 'you will have to create a new quote', new Date(2019,1,1)),
-    new Quote(2,'Upvote a quote', 'users should be able to vote a quote positively' ,new Date(2019,1,1)),
-    new Quote(3, 'Downvote the quote', 'users should be able to vote a quote negatively if they like the quote', new Date(2019,1,1)),
-    new Quote(4, 'Delete the quote', 'one should be able to delete a quote created', new Date(2019,1,1)),
-    new Quote(5, 'See the number of upvotes and downvotes', 'also one should be able to se the votes of the quote', new Date(2019,1,1)),
-    
-]
+      new Quote(1, 'Love is Blind.','B.William',new Date(2019,1,1)),
+      new Quote(2, 'We need much less than we think we need.', 'Maya Angelou',new Date(2019,1,1)),
+      new Quote(3, 'Creativity is contagious, pass it on', 'Albert Einstein',new Date(2019,1,1)),
+      new Quote(4, 'Happy girls are the prettiest girls', 'H.Audrey',new Date(2019,1,1)),
+      new Quote(5, 'Live as though life was created for you', 'Maya Angelou',new Date(2019,1,1)),
+  ];
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id=quoteLength+1;
+    this.quotes.unshift(quote)
+  
+  }
 deleteQuote(isComplete,index){
   if (isComplete){
       let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name}`)

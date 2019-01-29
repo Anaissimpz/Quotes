@@ -1,15 +1,24 @@
-<h1> My Quotes</h1>
+<h1>Quotes</h1>
+
+<p>Posts your quotes here!!!</p>
+<hr>
+
 <div class="container">
-    <div class="row" *ngFor="let quote of quotes; let i=index">
-        <div class="row">
-            <h4 id="{{i}}" appStrikethrough>{{quote.name}} due on {{goal.completeDate|date|uppercase}}</h4>
-            <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
-        </div>
-        
-        <div class="row" *ngIf="quote.showDescription">
-        <app-goal-details [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-goal-details>
-    </div>   
+
+    <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+    
+</div>
+
+<div class="container">
+<div class="row" *ngFor="let quote of quotes;let i = 'index'">
+<ul>
+        <li >{{quote.name}}</li> 
+        <button (click)='toogleDetails(i)'>Show Author</button>
+
+        <app-quote-details [quote]='quote'></app-quote-details>    
+</ul>
 </div>
 
 </div>
-<router-outlet></router-outlet>
