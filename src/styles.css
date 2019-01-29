@@ -8,3 +8,14 @@ body{
     position: relative;
     left: 400px;
 }
+button{
+    background-color:#ff99bb
+}
+ .btn-danger{
+    background-color:#ff99bb; 
+}
+.btn-success{
+    background-color:#ffdd99;
+    color:black;
+
+}
