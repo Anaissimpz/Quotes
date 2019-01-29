@@ -14,7 +14,7 @@ There are no installation requirments needed... with your web browser you can be
 Known Bugs
 There is a small issue that will be fixed in the coming days... an auto-refresh. clearing the fields as soon as the quote is submitted. and highlighting the quote with the highest number of votes.
 
-Technologies Used
+##Technologies Used
 *HTML
 *CSS
 *JAVASCRIPT/TYPESCRIPT
