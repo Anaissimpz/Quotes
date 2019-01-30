@@ -7,12 +7,12 @@ import {Quote} from './quote'
 })
 export class AppComponent {
   quotes= [ 
-    new Quote(1, 'Love is Blind.','B.William',new Date(2019,1,1)),
-  new Quote(2, 'We need much less than we think we need.', 'Maya Angelou',new Date(2019,1,1)),
-  new Quote(3, 'Creativity is contagious, pass it on', 'Albert Einstein',new Date(2019,1,1)),
-  new Quote(4, 'Happy girls are the prettiest girls', 'H.Audrey',new Date(2019,1,1)),
-  new Quote(5, 'Live as though life was created for you', 'Maya Angelou',new Date(2019,1,1)),
-    
+    new Quote(1, 'Love is Blind.','Created by', "B.William",''),
+    new Quote(2, 'We need much less than we think we need.', 'Created by', "Maya Angelou",''),
+    new Quote(3, 'Creativity is contagious, pass it on', 'Created by',"Albert Einstein",''),
+    new Quote(4, 'Happy girls are the prettiest girls', 'Created by',"H.Audrey",''),
+    new Quote(5, 'Live as though life was created for you', 'Created by',"Maya Angelou",''),
+
 ]
 constructor() { }
 }
